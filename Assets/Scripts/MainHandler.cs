@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 # if UNITY_EDITOR
 using MS.Shell.Editor;
-
 #endif
 
 public class MainHandler : MonoBehaviour
@@ -27,6 +26,8 @@ public class MainHandler : MonoBehaviour
     private Texture2D texture;
 
     private ScreenRequester screenRequester;
+
+    private Process test;
 
     private void Start()
     {
@@ -92,17 +93,13 @@ public class MainHandler : MonoBehaviour
 
     private void StartServer(int top, int left, int width, int height, int monitor)
     {
-# if UNITY_EDITOR
-        EditorShell.Execute(
-            $"{Application.streamingAssetsPath}/venv/bin/python {Application.streamingAssetsPath}/server.py {top} {left} {width} {height} {monitor}");
-# elif UNITY_STANDALONE_WIN
-            Process.Start(new ProcessStartInfo
+# if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+            test = Process.Start(new ProcessStartInfo
         {
             FileName = "cmd.exe",
             WindowStyle = ProcessWindowStyle.Hidden,
             UseShellExecute = true,
-            RedirectStandardOutput = false,
-            Arguments = $"{Application.streamingAssetsPath}/venv/bin/python {Application.streamingAssetsPath}/server.py {top} {left} {width} {height} {monitor}"
+            Arguments = $"/C {Application.streamingAssetsPath}/venv-windows/Scripts/python.exe {Application.streamingAssetsPath}/server.py {top} {left} {width} {height} {monitor}"
         });
 # else
         Process.Start(new ProcessStartInfo
@@ -117,16 +114,13 @@ public class MainHandler : MonoBehaviour
 
     private void StopServer()
     {
-# if UNITY_EDITOR
-        EditorShell.Execute($"pkill -f {Application.streamingAssetsPath}/server.py");
-# elif UNITY_STANDALONE_WIN
+# if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
         Process.Start(new ProcessStartInfo
         {
             FileName = "cmd.exe",
             WindowStyle = ProcessWindowStyle.Hidden,
             UseShellExecute = true,
-            RedirectStandardOutput = false,
-            Arguments = $"pkill -f {Application.streamingAssetsPath}/server.py"
+            Arguments = "/C taskkill /IM python.exe /F"
         });
 # else
         Process.Start(new ProcessStartInfo

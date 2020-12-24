@@ -5,6 +5,6 @@ This build has been done using this [package](https://github.com/off99555/Unity3
 
 Additionally, the python server requires to be started every time the screen sharing is started. To do this automatically:
 I have set up a .sh script in the Unity Streamingassets folder (for MacOS and Linux).
-For Windows, instead, I am opening the "cmd.exe" executable to run the Python server (currently not working as intended, will update this when I figure it out).
+For Windows, instead, I am opening the "cmd.exe" executable to run the Python server.
 
 Hope this is helpful :)
