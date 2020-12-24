@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_UnityProject.-1796177582.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="CompilerServices" t="Include">
+            <e p="ShellOperationAwaiter.cs" t="Include" />
+          </e>
+          <e p="EditorShell.cs" t="Include" />
+          <e p="GUIHelper.cs" t="Include" />
+          <e p="MS.Shell.Editor.asmdef" t="Include" />
+          <e p="ShellExecutor.cs" t="Include" />
+          <e p="ShellExecutorManager.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="MainHandler.cs" t="Include" />
+          <e p="RunAbleThread.cs" t="Include" />
+          <e p="ScreenRequester.cs" t="Include" />
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="venv" t="Include">
+            <e p="lib" t="Include">
+              <e p="python3.6" t="Include">
+                <e p="site-packages" t="Include">
+                  <e p="mss-6.1.0.dist-info" t="Include">
+                    <e p="entry_points.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="pip-19.0.3-py3.6.egg" t="Include">
+                    <e p="EGG-INFO" t="Include">
+                      <e p="SOURCES.txt" t="Include" />
+                      <e p="dependency_links.txt" t="Include" />
+                      <e p="entry_points.txt" t="Include" />
+                      <e p="top_level.txt" t="Include" />
+                    </e>
+                  </e>
+                  <e p="pyzmq-20.0.0.dist-info" t="Include">
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="zmq-0.0.0-py3.6.egg-info" t="Include">
+                    <e p="SOURCES.txt" t="Include" />
+                    <e p="dependency_links.txt" t="Include" />
+                    <e p="installed-files.txt" t="Include" />
+                    <e p="requires.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="lib64" t="Include">
+              <e p="python3.6" t="Include">
+                <e p="site-packages" t="Include">
+                  <e p="mss-6.1.0.dist-info" t="Include">
+                    <e p="entry_points.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="pip-19.0.3-py3.6.egg" t="Include">
+                    <e p="EGG-INFO" t="Include">
+                      <e p="SOURCES.txt" t="Include" />
+                      <e p="dependency_links.txt" t="Include" />
+                      <e p="entry_points.txt" t="Include" />
+                      <e p="top_level.txt" t="Include" />
+                    </e>
+                  </e>
+                  <e p="pyzmq-20.0.0.dist-info" t="Include">
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="zmq-0.0.0-py3.6.egg-info" t="Include">
+                    <e p="SOURCES.txt" t="Include" />
+                    <e p="dependency_links.txt" t="Include" />
+                    <e p="installed-files.txt" t="Include" />
+                    <e p="requires.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MS.Shell.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="UnityProject.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
