@@ -21,6 +21,7 @@ public class MainHandler : MonoBehaviour
     public TMP_InputField widthInputField;
     public TMP_InputField heightInputField;
     public TMP_InputField monitorInputField;
+    public TMP_InputField framerateInputField;
 
     public RawImage image;
     private Texture2D texture;
@@ -36,6 +37,7 @@ public class MainHandler : MonoBehaviour
         widthInputField.text = Screen.width.ToString();
         heightInputField.text = Screen.height.ToString();
         monitorInputField.text = "0";
+        framerateInputField.text = "60";
     }
 
     public void StartScreenSharing()
@@ -45,9 +47,9 @@ public class MainHandler : MonoBehaviour
 
         if (int.TryParse(topInputField.text, out var top) && int.TryParse(leftInputField.text, out var left) &&
             int.TryParse(widthInputField.text, out var width) && int.TryParse(heightInputField.text, out var height) &&
-            int.TryParse(monitorInputField.text, out var monitor))
+            int.TryParse(monitorInputField.text, out var monitor) && int.TryParse(framerateInputField.text, out var framerate))
         {
-            StartServer(top, left, width, height, monitor);
+            StartServer(top, left, width, height, monitor, framerate);
 
             texture = new Texture2D(width, height);
             image.GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
@@ -91,7 +93,7 @@ public class MainHandler : MonoBehaviour
         screenRequester.Stop();
     }
 
-    private void StartServer(int top, int left, int width, int height, int monitor)
+    private void StartServer(int top, int left, int width, int height, int monitor, int framerate)
     {
 # if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
             test = Process.Start(new ProcessStartInfo
@@ -99,7 +101,7 @@ public class MainHandler : MonoBehaviour
             FileName = "cmd.exe",
             WindowStyle = ProcessWindowStyle.Hidden,
             UseShellExecute = true,
-            Arguments = $"/C {Application.streamingAssetsPath}/venv-windows/Scripts/python.exe {Application.streamingAssetsPath}/server.py {top} {left} {width} {height} {monitor}"
+            Arguments = $"/C {Application.streamingAssetsPath}/venv-windows/Scripts/python.exe {Application.streamingAssetsPath}/server.py {top} {left} {width} {height} {monitor} {framerate}"
         });
 # else
         Process.Start(new ProcessStartInfo
@@ -107,7 +109,7 @@ public class MainHandler : MonoBehaviour
             FileName = "/bin/sh",
             UseShellExecute = true,
             RedirectStandardOutput = false,
-            Arguments = $"{Application.streamingAssetsPath}/server.sh {top} {left} {width} {height} {monitor}"
+            Arguments = $"{Application.streamingAssetsPath}/server.sh {top} {left} {width} {height} {monitor} {framerate}"
         });
 # endif
     }

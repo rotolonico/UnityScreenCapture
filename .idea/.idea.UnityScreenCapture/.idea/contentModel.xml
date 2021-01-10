@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\rotol\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\rotol\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_UnityScreenCapture.912054472.00" t="ExcludeRecursive" />
-    <e p="C:\Users\rotol\unityprojects\UnityScreenCapture" t="IncludeRecursive">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_UnityScreenCapture.-829803646.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
@@ -32,9 +32,9 @@
                   </e>
                   <e p="pip-19.0.3-py3.6.egg" t="Include">
                     <e p="EGG-INFO" t="Include">
+                      <e p="SOURCES.txt" t="Include" />
                       <e p="dependency_links.txt" t="Include" />
                       <e p="entry_points.txt" t="Include" />
-                      <e p="SOURCES.txt" t="Include" />
                       <e p="top_level.txt" t="Include" />
                     </e>
                   </e>
@@ -42,10 +42,38 @@
                     <e p="top_level.txt" t="Include" />
                   </e>
                   <e p="zmq-0.0.0-py3.6.egg-info" t="Include">
+                    <e p="SOURCES.txt" t="Include" />
                     <e p="dependency_links.txt" t="Include" />
                     <e p="installed-files.txt" t="Include" />
                     <e p="requires.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="lib64" t="Include">
+              <e p="python3.6" t="Include">
+                <e p="site-packages" t="Include">
+                  <e p="mss-6.1.0.dist-info" t="Include">
+                    <e p="entry_points.txt" t="Include" />
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="pip-19.0.3-py3.6.egg" t="Include">
+                    <e p="EGG-INFO" t="Include">
+                      <e p="SOURCES.txt" t="Include" />
+                      <e p="dependency_links.txt" t="Include" />
+                      <e p="entry_points.txt" t="Include" />
+                      <e p="top_level.txt" t="Include" />
+                    </e>
+                  </e>
+                  <e p="pyzmq-20.0.0.dist-info" t="Include">
+                    <e p="top_level.txt" t="Include" />
+                  </e>
+                  <e p="zmq-0.0.0-py3.6.egg-info" t="Include">
                     <e p="SOURCES.txt" t="Include" />
+                    <e p="dependency_links.txt" t="Include" />
+                    <e p="installed-files.txt" t="Include" />
+                    <e p="requires.txt" t="Include" />
                     <e p="top_level.txt" t="Include" />
                   </e>
                 </e>
@@ -53,7 +81,7 @@
             </e>
           </e>
           <e p="venv-windows" t="Include">
-            <e p="lib" t="Include">
+            <e p="Lib" t="Include">
               <e p="site-packages" t="Include">
                 <e p="mss-6.1.0.dist-info" t="Include">
                   <e p="entry_points.txt" t="Include" />
@@ -65,8 +93,8 @@
                   </e>
                 </e>
                 <e p="pip-20.3.3.dist-info" t="Include">
-                  <e p="entry_points.txt" t="Include" />
                   <e p="LICENSE.txt" t="Include" />
+                  <e p="entry_points.txt" t="Include" />
                   <e p="top_level.txt" t="Include" />
                 </e>
                 <e p="pkg_resources" t="Include">
@@ -79,8 +107,8 @@
                       <e p="my-test-package_unpacked-egg" t="Include">
                         <e p="my_test_package-1.0-py3.7.egg" t="Include">
                           <e p="EGG-INFO" t="Include">
-                            <e p="dependency_links.txt" t="Include" />
                             <e p="SOURCES.txt" t="Include" />
+                            <e p="dependency_links.txt" t="Include" />
                             <e p="top_level.txt" t="Include" />
                           </e>
                         </e>
@@ -105,10 +133,10 @@
                   <e p="top_level.txt" t="Include" />
                 </e>
                 <e p="zmq-0.0.0-py3.9.egg-info" t="Include">
+                  <e p="SOURCES.txt" t="Include" />
                   <e p="dependency_links.txt" t="Include" />
                   <e p="installed-files.txt" t="Include" />
                   <e p="requires.txt" t="Include" />
-                  <e p="SOURCES.txt" t="Include" />
                   <e p="top_level.txt" t="Include" />
                 </e>
               </e>
@@ -145,10 +173,10 @@
         </e>
       </e>
       <e p="MS.Shell.Editor.csproj" t="IncludeRecursive" />
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
       <e p="UnityScreenCapture.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

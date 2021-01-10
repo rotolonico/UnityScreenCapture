@@ -1,6 +1,7 @@
 import sys
 import zmq
 from mss import mss
+import time
 
 REQUEST_TIMEOUT = 2500
 
@@ -11,6 +12,7 @@ client = context.socket(zmq.REP)
 client.bind("tcp://*:6789")
 
 monitor = {"top": int(sys.argv[1]), "left": int(sys.argv[2]), "width": int(sys.argv[3]), "height": int(sys.argv[4]), "mon": int(sys.argv[5])}
+delay = 1 / int(sys.argv[6])
 
 poll = zmq.Poller()
 poll.register(client, zmq.POLLIN)
@@ -36,6 +38,5 @@ while True:
                 client.bind("tcp://*:6789")
                 poll.register(client, zmq.POLLIN)
 
-            client.send(sct.grab(monitor).raw)
-
-context.term()
+            time.sleep(delay)
+            client.send(sct.grab(monitor).raw, zmq.NOBLOCK)
